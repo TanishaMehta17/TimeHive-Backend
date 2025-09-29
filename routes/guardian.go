@@ -7,6 +7,7 @@ import (
 
 func GuardianRoutes(rg *gin.RouterGroup){
 
-	rg.POST("/makeguardian", controller.MakeGuardian)
+	rg.POST("/makeguardian", controller.SubmitGuardian)
+	rg.POST("/verifyguardian", controller.VerifyGuardian)
      
 } 
