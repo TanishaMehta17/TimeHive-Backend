@@ -8,5 +8,6 @@ type DailyAppUsage struct {
 	AppID        string    `json:"app_id"`
 	UsageDate    time.Time `json:"usage_date"`
 	TotalMinutes int       `json:"total_minutes"`
+	Blocked      bool      `json:"blocked"`         
 	UpdatedAt    time.Time `json:"updated_at"`
 }
